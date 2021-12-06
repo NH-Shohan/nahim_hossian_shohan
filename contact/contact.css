@@ -1,0 +1,247 @@
+body {
+  margin: 0;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  background-color: #111111;
+  font-family: "Nunito", sans-serif;
+}
+
+/*******************/
+/* Utility Section */
+/*******************/
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+span {
+  color: #683bca;
+  font-weight: 900;
+}
+hr {
+  display: inline-flex;
+  width: 100%;
+}
+.center {
+  text-align: center;
+}
+
+/*******************/
+/* Contact Section */
+/*******************/
+.contact {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 2fr;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contact-section {
+  color: white;
+  background-color: #222222;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+/***************************/
+/* Contact Details Section */
+/***************************/
+.contact-details h1 {
+  font-size: 70px;
+  text-align: center;
+  margin-block: -10px;
+}
+.contact-details i {
+  font-size: 24px;
+  padding-inline: 10px;
+}
+.contact-details a {
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  color: white;
+  float: right;
+}
+.contact-details a:hover {
+  box-shadow: none;
+}
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 2fr;
+}
+
+/************************/
+/* Contact Info Section */
+/************************/
+.contact-info {
+  background-color: #111111;
+  border-radius: 10px;
+  padding: 20px;
+}
+.contact-info h1 {
+  color: #683bca;
+  font-size: 24px;
+  line-height: 8px;
+}
+.contact-info h1 a {
+  font-size: 24px;
+  font-weight: 900;
+  width: auto;
+  margin-bottom: -10px;
+}
+.contact-info h1 a:focus {
+  color: white;
+}
+.contact-info h1 a i {
+  width: 16px;
+  margin-right: 15px;
+}
+
+/************************/
+/* Contact Form Section */
+/************************/
+
+.form {
+  height: 10%;
+  background-color: #222222;
+}
+.name-section {
+  position: relative;
+  margin-bottom: 5px;
+}
+.name-section input {
+  border: none;
+  border-bottom: 2px solid #683bca;
+  background-color: transparent;
+  color: white;
+  padding: 12px;
+  width: 80%;
+  outline: none;
+  font-size: 15px;
+}
+.name-section input:valid,
+.name-section input:hover {
+  border-color: #222;
+  transition-delay: 1s;
+  border-bottom: 2px solid #683bca;
+}
+.email-section {
+  position: relative;
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+.email-section input {
+  border: none;
+  border-bottom: 2px solid #683bca;
+  background-color: transparent;
+  color: white;
+  padding: 12px;
+  width: 80%;
+  outline: none;
+  font-size: 15px;
+}
+.email-section input:valid,
+.email-section input:hover {
+  border-color: #683bca;
+  transition-delay: 1s;
+}
+.writing-section {
+  position: relative;
+  padding-top: 20px;
+}
+.writing-section textarea {
+  border: none;
+  border-left: 1px solid #683bca;
+  border-bottom: 2px solid #683bca;
+  font-family: "Nunito", sans-serif;
+  background-color: transparent;
+  color: white;
+  padding: 12px;
+  width: 80%;
+  outline: none;
+  font-size: 15px;
+}
+.writing-section textarea:valid,
+.writing-section textarea:hover {
+  border-color: #222;
+  transition-delay: 1s;
+  border-left: 1px solid #683bca;
+  border-bottom: 2px solid #683bca;
+}
+a {
+  margin-block: 10px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 18px;
+  border-radius: 40px;
+  box-shadow: -2px -2px 8px rgb(0, 0, 0, 1), -2px -2px 12px rgba(0, 0, 0, 0.5),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+a:hover {
+  cursor: pointer;
+  box-shadow: inset -2px -2px 8px rgba(0, 0, 0, 1),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.1),
+    inset -2px -2px 12px rgba(0, 0, 0, 0.5),
+    inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+button {
+  background-color: transparent;
+  border: none;
+  color: #683bca;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+a:hover button {
+  display: inline-block;
+  transform: scale(0.99);
+  cursor: pointer;
+}
+
+/***************/
+/***************/
+/* TABLAT VIEW */
+/***************/
+/***************/
+
+@media only screen and (max-width: 768px) {
+  .contact {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+  }
+  .hidden {
+    display: none;
+  }
+  .image img {
+    display: none;
+  }
+}
+
+/**************/
+/**************/
+/* PHONE VIEW */
+/**************/
+/**************/
+
+@media only screen and (max-width: 600px) {
+  .center {
+    display: block;
+  }
+  .contact-details i {
+    font-size: 24px;
+    padding: 10px;
+  }
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+}

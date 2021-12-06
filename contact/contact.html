@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awsome link -->
+    <script
+      src="https://kit.fontawesome.com/4bd420869f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="contact.css" />
+
+    <title>Contact || Shohan</title>
+  </head>
+  <body>
+    <div class="contact">
+      <section class="image hidden">
+        <img src="../image/shohan.png" alt="Shohan" />
+      </section>
+      <section class="contact-section">
+        <section class="contact-details">
+          <a href="../home/index.html"><i class="fas fa-times"></i></a>
+          <h1>Get <span>In Touch</span></h1>
+          <div class="center">
+            <hr />
+            <i class="fas fa-envelope-open"></i>
+            <hr />
+          </div>
+        </section>
+
+        <section class="contact-form">
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <p>+8801738485570</p>
+            <h1>Email</h1>
+            <p>nahim.hossain.shohan@gmail.com</p>
+            <h1>Addess</h1>
+            <p>Dhaka,Bangladesh</p>
+            <h1>
+              <a
+                onclick="window.open('https://www.facebook.com/nahim.hossain.shohan.3/')"
+                ><i class="fab fa-facebook"></i>Facebook</a
+              >
+            </h1>
+            <h1>
+              <a
+                onclick="window.open('https://www.linkedin.com/in/nahim-hossain-shohan')"
+                ><i class="fab fa-linkedin"></i>LinkedIn</a
+              >
+            </h1>
+            <h1>
+              <a onclick="window.open('https://github.com/NH-Shohan')"
+                ><i class="fab fa-github"></i>GitHub</a
+              >
+            </h1>
+          </div>
+          <form
+            class="form"
+            action="https://formspree.io/f/xyyogrrw"
+            method="POST"
+          >
+            <div>
+              <h3>FEEL FREE TO DROP ME A LINE</h3>
+              <p>
+                If you have any suggestion, project or even you want to say
+                Hello!
+                <br />
+                Please fill out the form below and I will reply you shortly.
+              </p>
+            </div>
+            <div class="name-section">
+              <span>Enter Your Name</span>
+              <input type="text" name="name" required="" placeholder="Name" />
+            </div>
+            <div class="email-section">
+              <span>Enter Your Email</span>
+              <input
+                type="email"
+                name="_replyto"
+                required=""
+                placeholder="Email"
+              />
+            </div>
+            <div class="writing-section">
+              <span>Write Your Massege...</span>
+              <textarea
+                type="message"
+                id=""
+                cols="30"
+                rows="10"
+                name="message"
+                placeholder="Your Message..."
+                required=""
+              ></textarea>
+            </div>
+            <a><button type="submit">Submit</button></a>
+          </form>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>

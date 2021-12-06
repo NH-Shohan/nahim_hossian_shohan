@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  background-color: #111111;
+}
+
+/*******************/
+/* Utility Section */
+/*******************/
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+span {
+  color: #683bca;
+  font-weight: 900;
+}
+
+/****************/
+/* Grid Section */
+/****************/
+.portfolio {
+  height: 92vh;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 30% repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.grid-row-span-2 {
+  grid-row: 1 / span 2;
+}
+.portfolio-section {
+  font-family: "Nunito", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: #222222;
+}
+.portfolio-section img {
+  width: auto;
+  height: 100%;
+  border-radius: 10px;
+}
+.portfolio-section h1 {
+  font-weight: 800;
+  font-size: 30px;
+}
+
+/*****************/
+/* Image Section */
+/*****************/
+.image {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+/*****************/
+/* Intro Section */
+/*****************/
+.intro {
+  background-color: transparent;
+  text-align: center;
+  margin-block: auto;
+  line-height: 25px;
+}
+.intro h3 {
+  font-weight: 500;
+}
+.intro h1 {
+  font-size: 28px;
+}
+.intro h2 {
+  color: #683bca;
+  font-weight: 600;
+}
+.intro a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 18px;
+  border-radius: 40px;
+  box-shadow: -2px -2px 8px rgb(0, 0, 0, 1), -2px -2px 12px rgba(0, 0, 0, 0.5),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+.intro a:hover {
+  cursor: pointer;
+  box-shadow: inset -2px -2px 8px rgba(0, 0, 0, 1),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.1),
+    inset -2px -2px 12px rgba(0, 0, 0, 0.5),
+    inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+.intro button {
+  background-color: transparent;
+  border: none;
+  color: #683bca;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.intro a:hover button {
+  display: inline-block;
+  transform: scale(0.98);
+  cursor: pointer;
+}
+
+/*****************/
+/* About Section */
+/*****************/
+
+/*******************/
+/* Contact Section */
+/*******************/
+.contact {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/***************/
+/***************/
+/* TABLAT VIEW */
+/***************/
+/***************/
+
+@media only screen and (max-width: 768px) {
+  .portfolio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hidden {
+    display: none;
+  }
+  .portfolio-section img {
+    display: none;
+  }
+}
+
+/**************/
+/**************/
+/* PHONE VIEW */
+/**************/
+/**************/
+
+@media only screen and (max-width: 600px) {
+  .portfolio {
+    grid-template-columns: 1fr;
+  }
+  .intro h1 {
+    font-size: 24px;
+  }
+  .intro h2 {
+    font-size: 20px;
+  }
+}

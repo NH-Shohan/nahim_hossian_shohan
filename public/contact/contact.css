@@ -36,6 +36,8 @@ hr {
 }
 
 img {
+  position: sticky;
+  top: 1.5rem;
   width: 100%;
   border-radius: 10px;
 }

@@ -29,7 +29,7 @@ hr {
 /*******************/
 /* Contact Section */
 /*******************/
-.contact {
+.contact-part {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: 1fr 2fr;
@@ -214,10 +214,14 @@ a:hover button {
 /***************/
 
 @media only screen and (max-width: 768px) {
-  .contact {
+  .contact-part {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: 1fr;
+  }
+  .contact-details i {
+    font-size: 24px;
+    padding: 20px;
   }
   .hidden {
     display: none;
@@ -239,7 +243,7 @@ a:hover button {
   }
   .contact-details i {
     font-size: 24px;
-    padding: 10px;
+    padding: 20px;
   }
   .contact-form {
     grid-template-columns: 1fr;

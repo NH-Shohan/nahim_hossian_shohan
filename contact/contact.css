@@ -89,7 +89,13 @@ img {
   font-size: 24px;
   line-height: 8px;
 }
+.contact-info h1 i {
+  margin-right: 10px;
+}
 .contact-info h1 a {
+  display: flex;
+  justify-content: left;
+  align-items: center;
   font-size: 24px;
   font-weight: 900;
   width: auto;
@@ -102,7 +108,6 @@ img {
   width: 16px;
   margin-right: 15px;
 }
-
 /************************/
 /* Contact Form Section */
 /************************/
@@ -238,6 +243,9 @@ a:hover button {
 /**************/
 
 @media only screen and (max-width: 600px) {
+  .contact-details h1 {
+    font-size: 40px;
+  }
   .center {
     display: block;
   }
